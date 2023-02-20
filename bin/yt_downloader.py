@@ -25,7 +25,7 @@ Need to code the file already exists popup
 class MainWindow(QMainWindow):
     def __init__(self):
         super(MainWindow,self).__init__()
-        loadUi("F:\Python projects(Pycharm)\GUI\QT5\yt_downloader.ui",self)
+        loadUi("yt_downloader.ui",self)
         qualities = ["360p","720p"]
         self.stream_quality.addItems(qualities)
         self.show()
@@ -33,7 +33,7 @@ class MainWindow(QMainWindow):
         self.Download.clicked.connect(self.download_fn)
     def browse_fn(self):
         global url
-        self.fname = QFileDialog.getExistingDirectory(self,"Open File","K:\Python projects(Pycharm)\yt_test")
+        self.fname = QFileDialog.getExistingDirectory(self,"Open File","C:")
         self.Url_Inp_2.setText(self.fname)
         self.url = self.Url_Inp.text()
     def download_fn(self):
@@ -77,7 +77,7 @@ class Confirmation_Window(QMainWindow):
         qualities = ["360p","720p"]
         print(qualities)
         print("loaded UI")
-        loadUi("F:\Python projects(Pycharm)\GUI\QT5\yt_downloader_confirmation.ui",self)
+        loadUi("yt_downloader_confirmation.ui",self)
         self.yt = YouTube(self.url)
         print(self.yt.thumbnail_url)
         #Loading Thumbnail image
@@ -123,7 +123,7 @@ class Downloading_Window(QMainWindow):
         print("Download window opened")
         super(Downloading_Window,self).__init__()
         #Load the UI
-        loadUi("F:\Python projects(Pycharm)\GUI\QT5\Download_Window.ui",self)
+        loadUi("Download_Window.ui",self)
         print("Loaded UI")
         self.show()
         file.download(filename)
