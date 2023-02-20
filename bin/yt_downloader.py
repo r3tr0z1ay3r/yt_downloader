@@ -24,8 +24,9 @@ Need to code the file already exists popup
 
 class MainWindow(QMainWindow):
     def __init__(self):
+        print(os.getcwd())
         super(MainWindow,self).__init__()
-        loadUi("yt_downloader.ui",self)
+        loadUi(os.path.join(os.path.dirname(__file__),"yt_downloader.ui"),self)
         qualities = ["360p","720p"]
         self.stream_quality.addItems(qualities)
         self.show()
@@ -77,7 +78,7 @@ class Confirmation_Window(QMainWindow):
         qualities = ["360p","720p"]
         print(qualities)
         print("loaded UI")
-        loadUi("yt_downloader_confirmation.ui",self)
+        loadUi(os.path.join(os.path.dirname(__file__),"yt_downloader_confirmation.ui"),self)
         self.yt = YouTube(self.url)
         print(self.yt.thumbnail_url)
         #Loading Thumbnail image
@@ -123,7 +124,7 @@ class Downloading_Window(QMainWindow):
         print("Download window opened")
         super(Downloading_Window,self).__init__()
         #Load the UI
-        loadUi("Download_Window.ui",self)
+        loadUi(os.path.join(os.path.dirname(__file__),"Download_Window.ui"),self)
         print("Loaded UI")
         self.show()
         file.download(filename)
