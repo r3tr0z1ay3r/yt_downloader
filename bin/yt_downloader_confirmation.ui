@@ -47,6 +47,9 @@
     <property name="text">
      <string>TextLabel</string>
     </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QLabel" name="File_Siz_Label">
     <property name="geometry">
@@ -65,6 +68,9 @@
     </property>
     <property name="text">
      <string>File Size</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="Size">
@@ -85,6 +91,9 @@
     <property name="text">
      <string/>
     </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QLabel" name="Confirmatio_Lab">
     <property name="geometry">
@@ -103,6 +112,9 @@
     </property>
     <property name="text">
      <string>Confirmation Page</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="Download_But">
@@ -146,6 +158,9 @@
     <property name="scaledContents">
      <bool>true</bool>
     </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QLabel" name="Vid_Title_2">
     <property name="geometry">
@@ -165,6 +180,9 @@
     <property name="text">
      <string>Title:</string>
     </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QLabel" name="Size_2">
     <property name="geometry">
@@ -183,6 +201,9 @@
     </property>
     <property name="text">
      <string>MB</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
     </property>
    </widget>
   </widget>

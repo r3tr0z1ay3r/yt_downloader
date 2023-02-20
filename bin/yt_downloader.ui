@@ -135,6 +135,9 @@
     <property name="text">
      <string>Select Quality to download video:</string>
     </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QComboBox" name="stream_quality">
     <property name="geometry">
